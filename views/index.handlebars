@@ -22,7 +22,7 @@
   {{/each}}
 </ul>
 
-<h2>Add an Article</h2>
+{{!-- <h2>Add an Article</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -38,3 +38,40 @@
 
   <button type="submit">Add Article</button>
 </form>
+
+<!DOCTYPE html>
+<html lang="en-us"> --}}
+  <head>
+    <meta charset="UTF-8">
+    <title>Reddit Article</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Reddit Scraper</h1>
+      
+      <div id="articles">
+<div class="form-group">
+    <label for="ca">Reddit Article</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="sleepy"></label><br>
+    <input type="radio" name="sleepy" id="titleinput" value="1" checked> <br>
+    <input type="radio" name="sleepy" id="bodyinput" value="0"> 
+  </div>
+
+  <button type="submit">Add Article</button>
+</form>
+
+
+      </div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
